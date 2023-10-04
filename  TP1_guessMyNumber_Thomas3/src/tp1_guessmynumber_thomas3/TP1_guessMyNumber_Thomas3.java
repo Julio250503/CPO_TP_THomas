@@ -50,7 +50,7 @@ public class TP1_guessMyNumber_Thomas3 {
         }
 
         if (tentative == essaisMax) {
-            System.out.println("Dommage, vous avez épuisé toutes vos tentatives. Le nombre à deviner était : " + nombreAleatoire1);
+            System.out.println("Vous avez épuisé toutes vos tentatives. Le nombre à deviner était : " + nombreAleatoire1);
         }
 
         scanner.close();
