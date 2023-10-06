@@ -8,13 +8,6 @@ package tp2_bieres_thomas1;
  *
  * @author Jules
  */
-public class BouteilleBiere {
-        String nom;
-        float degreAlcool;
-        String brasserie;
-        bool ouverte;
-        
-        
-    
+class bool {
     
 }
