@@ -9,17 +9,32 @@ package tp2_bieres_thomas1;
  * @author Jules
  */
 public class BouteilleBiere {
-        String nom;
-        float degreAlcool;
-        String brasserie;
-        boolean ouverte;
-        
-        public BouteilleBiere(String unNom,double unDegre,
-                String uneBrasserie) {
-                nom = unNom;
-                degreAlcool = unDegree;
-                brasserie = uneBrasserie;
-                ouverte = false;
+
+    String nom;
+    double degreAlcool;
+    String brasserie;
+    boolean ouverte;
+
+    public BouteilleBiere(String unNom, double unDegre,
+            String uneBrasserie) {
+        nom = unNom;
+        degreAlcool = unDegre;
+        brasserie = uneBrasserie;
+        ouverte = false;
+    }
+
+    public void lireEtiquette() {
+        System.out.println("Bouteille de " + nom + " (" + degreAlcool + " degres) \nBrasserie" + brasserie);
+    }
+
+    public boolean Décapsuler() {
+        if (ouverte == false) {
+            ouverte = true;
+            return true;
+        } else {
+            System.out.println("erreur : bière déjà ouverte");
+            return false;
         }
-       
+    }
+
 }
