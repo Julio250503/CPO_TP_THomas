@@ -12,9 +12,14 @@ public class BouteilleBiere {
         String nom;
         float degreAlcool;
         String brasserie;
-        bool ouverte;
+        boolean ouverte;
         
-        
-    
-    
+        public BouteilleBiere(String unNom,double unDegre,
+                String uneBrasserie) {
+                nom = unNom;
+                degreAlcool = unDegree;
+                brasserie = uneBrasserie;
+                ouverte = false;
+        }
+       
 }
