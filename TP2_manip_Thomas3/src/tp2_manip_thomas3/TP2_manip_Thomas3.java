@@ -30,14 +30,11 @@ public class TP2_manip_Thomas3 {
         System.out.println("Nombre de calories de Assiette 3 (qui fait reference a la meme tartiflette) : " + assiette3.nbCalories);
 
         Moussaka[] tableauMoussaka = new Moussaka[10];
-
-        // Créer 10 objets de type Moussaka avec des nombres de calories différents
         for (int i = 0; i < 10; i++) {
-            int calories = i * 100; // Par exemple, 100 calories de plus à chaque itération
+            int calories = i * 100;
             tableauMoussaka[i] = new Moussaka(calories);
         }
 
-        // Accéder directement à nbCalories pour afficher le nombre de calories de chaque objet
         for (int i = 0; i < 10; i++) {
             System.out.println("Objet Moussaka " + i + " a " + tableauMoussaka[i].nbCalories + " calories.");
         }
