@@ -18,7 +18,14 @@ public class TP1_convertisseur_Thomas2 {
     public static void main(String[] args) {
         int conv;
         Scanner sc1 = new Scanner(System.in);
-        System.out.println("Selectionnez la conversion que vous souhaitez effectuer :" + "\n1) De Celcius vers Kelvin" + "\n2) De Kelvin vers Celcius" + "\n3) De Celcius vers Fahrenheit" + "\n4) De Fahrenheit vers Celcius" + "\n5) De Kelvin vers Fahrenheit" + "\n6) De Fahrenheit vers Kelvin");
+        System.out.println("""
+                           Selectionnez la conversion que vous souhaitez effectuer :
+                           1) De Celcius vers Kelvin
+                           2) De Kelvin vers Celcius
+                           3) De Celcius vers Fahrenheit
+                           4) De Fahrenheit vers Celcius
+                           5) De Kelvin vers Fahrenheit
+                           6) De Fahrenheit vers Kelvin""");
         conv = sc1.nextInt();
 
         Scanner sc2 = new Scanner(System.in);
