@@ -28,6 +28,8 @@ public class TP2_convertisseurObjet_Thomas2 {
         double Kelvin2 = convertisseur2.CelsiusVersKelvin(celsius2);
 
         System.out.println("Nombre de conversions effectuées par convertisseur2: " + convertisseur2.toString());
+        
+        
     }
 
 }
