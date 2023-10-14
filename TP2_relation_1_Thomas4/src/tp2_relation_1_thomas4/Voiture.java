@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package tp2_relation_1_thomas4;
 
 /**
@@ -10,15 +6,19 @@ package tp2_relation_1_thomas4;
  */
 public class Voiture {
 
-    public Voiture(String Modele, String Marque, int PuissanceCV) {
-        this.Modele = Modele;
-        this.Marque = Marque;
-        this.PuissanceCV = PuissanceCV;
-    }
-    String Modele;
     String Marque;
     int PuissanceCV;
-    
-    
-    
+    String Modele;
+    Personne proprietaire;
+
+    public Voiture(String UnModele, String UneMarque, int UnePuissance) {
+        Marque = UneMarque;
+        PuissanceCV = UnePuissance;
+        Modele = UnModele;
+    }
+
+    @Override
+    public String toString() {
+        return Modele + " venant de chez " + Marque + " de puissance " + PuissanceCV;
+    }
 }
