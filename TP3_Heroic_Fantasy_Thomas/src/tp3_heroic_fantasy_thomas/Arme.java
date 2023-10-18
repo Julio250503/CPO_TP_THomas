@@ -6,30 +6,24 @@ package tp3_heroic_fantasy_thomas;
 
 /**
  *
- * @author Jules
+ * @author Jules Thomas TD C
  */
-public class Arme {
+public abstract class Arme {
 
     private String nom;
     private int niveauAttaque;
 
-    
     public Arme(String nom, int niveauAttaque) {
         this.nom = nom;
         this.niveauAttaque = niveauAttaque;
     }
 
-    
     @Override
     public String toString() {
         return "Nom de l'arme : " + nom + "\nNiveau d'attaque : " + niveauAttaque;
     }
 
-    public static void main(String[] args) {
-        
-        Arme epee = new Arme("Épée ", 40);
-
-        
-        System.out.println(epee.toString());
+    public String getNom() {
+        return nom;
     }
 }

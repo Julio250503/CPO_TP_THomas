@@ -14,7 +14,13 @@ public class TP3_Heroic_Fantasy_Thomas {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Arme epee = new Arme("Epee ", 40) {
+        };
+
+        String nomArme = epee.getNom();
+
+        System.out.println(epee.toString());
+        
     }
-    
+
 }
