@@ -5,7 +5,11 @@
 package tp3_heroic_fantasy_thomas;
 
 import Armes.*;
+import Personnages.Personnage;
+import Personnages.guerrier;
+import Personnages.magicien;
 import java.util.ArrayList;
+
 /**
  *
  * @author Jules
@@ -33,4 +37,10 @@ public class TP3_Heroic_Fantasy_Thomas {
             System.out.println("votre amre est : " + Tab.get(i));
         }
     }
+    magicien Gandalf = new magicien(true, "Gandalf", 65);
+    magicien Garcimore = new magicien(false, "Garcimore", 44);
+
+    guerrier Conan = new guerrier(false, "Conan", 78);
+    guerrier Lannister = new guerrier(true, "Lannister", 45);
+
 }
