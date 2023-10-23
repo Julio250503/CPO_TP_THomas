@@ -9,9 +9,35 @@ package tp3_heroic_fantasy_thomas;
  * @author Jules
  */
 public class Baton extends Arme {
-    
-    public Baton(String nom, int niveauAttaque) {
-        super(nom, niveauAttaque);
+
+    private int age;
+
+    public Baton(String Nom, int niveauAttaque, int Agearme) {
+        super(Nom, niveauAttaque);
+        if (Agearme > 0) {
+            age = Agearme;
+        } else {
+            age = 0;
+        }
+        if (Agearme > 100) {
+            Agearme = 100;
+        }
+        this.age = Agearme;
     }
-    
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        if (age > 0) {
+            this.age = age;
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "Baton{" + "age=" + age + '}';
+    }
+
 }

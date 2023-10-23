@@ -10,7 +10,7 @@ package tp3_heroic_fantasy_thomas;
  */
 public abstract class Arme {
 
-    private String nom;
+    private final String nom;
     private int niveauAttaque;
 
     public Arme(String nom, int niveauAttaque) {
@@ -25,5 +25,15 @@ public abstract class Arme {
 
     public String getNom() {
         return nom;
+    }
+
+    public int getNiveauAttaque() {
+        return niveauAttaque;
+    }
+
+    public void setNiveauAttaque(int NiveauAttaque) {
+        if (NiveauAttaque > 0) {
+            this.niveauAttaque = NiveauAttaque;
+        }
     }
 }
