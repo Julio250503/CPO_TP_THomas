@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package tp3_heroic_fantasy_thomas;
+package Armes;
 
 /**
  *
@@ -12,7 +12,7 @@ public class Epee extends Arme {
 
     private int indice;
 
-    public Epee(String nom, int niveauAttaque) {
+    public Epee(int indice, String nom, int niveauAttaque) {
         super(nom, niveauAttaque);
         if (indice > 0) {
 
@@ -20,7 +20,7 @@ public class Epee extends Arme {
             indice = 0;
         }
         if (indice > 100) {
-            indice = 100;
+
         }
 
     }
@@ -37,7 +37,7 @@ public class Epee extends Arme {
 
     @Override
     public String toString() {
-        return "Epee{" + "indice=" + indice + '}';
+        return "Epee " + "indice " + indice + ' ' + super.toString();
     }
 
 }

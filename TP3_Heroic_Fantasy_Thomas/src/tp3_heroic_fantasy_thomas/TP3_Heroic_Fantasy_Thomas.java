@@ -4,6 +4,8 @@
  */
 package tp3_heroic_fantasy_thomas;
 
+import Armes.*;
+import java.util.ArrayList;
 /**
  *
  * @author Jules
@@ -14,13 +16,21 @@ public class TP3_Heroic_Fantasy_Thomas {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Arme epee = new Arme("Epee ", 40) {
-        };
+        Epee Excalibur = new Epee(5, "Excalibur", 7);
+        Epee Durandal = new Epee(7, "Durandal", 4);
+        Baton chene = new Baton("Chene", 4, 5);
+        Baton charme = new Baton("Charme", 5, 6);
 
-        String nomArme = epee.getNom();
+        ArrayList<Arme> Tab = new ArrayList<>();
+        Tab.add(Excalibur);
+        Tab.add(Durandal);
+        Tab.add(chene);
+        Tab.add(charme);
 
-        System.out.println(epee.toString());
-        
+        int taille = Tab.size();
+
+        for (int i = 0; i < taille; i++) {
+            System.out.println("votre amre est : " + Tab.get(i));
+        }
     }
-
 }
