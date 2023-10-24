@@ -6,7 +6,7 @@ package Armes;
 
 /**
  *
- * @author Jules
+ * @author Jules Thomas TD C
  */
 public class Baton extends Arme {
 

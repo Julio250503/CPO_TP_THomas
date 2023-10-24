@@ -10,7 +10,7 @@ package Armes;
  */
 public class Epee extends Arme {
 
-    private int indice;
+    int indice;
 
     public Epee(int indice, String nom, int niveauAttaque) {
         super(nom, niveauAttaque);
