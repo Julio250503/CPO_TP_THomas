@@ -60,25 +60,25 @@ public class TP3_Heroic_Fantasy_Thomas {
         Baton arme4 = new Baton("brindille", 1, 10);
         Baton arme5 = new Baton("batte de baseball", 3, 1);
         Baton arme6 = new Baton("kapla", 2, 2);
-        
-        magicien Julio = new magicien (true , "Julio", 65);
-        guerrier Tanguy = new guerrier (false , "Tanguy", 78);
 
-        Tanguy.gestion(arme1);       
+        magicien Julio = new magicien(true, "Julio", 65);
+        guerrier Tanguy = new guerrier(false, "Tanguy", 78);
+
+        Tanguy.gestion(arme1);
         Tanguy.gestion(arme2);
         Tanguy.gestion(arme3);
-        
+
         Tanguy.equiper(arme2);
         Tanguy.getArme_en_main();
-        
+
         Julio.gestion(arme1);
         Julio.gestion(arme4);
         Julio.gestion(arme6);
-        
+
         Julio.equiper(arme1);
         Julio.getArme_en_main();
         Julio.NbArmePref();
-        
+
         System.out.println(Julio.toString());
         System.out.println(Tanguy.toString());
     }

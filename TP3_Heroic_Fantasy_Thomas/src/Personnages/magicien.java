@@ -13,18 +13,17 @@ import Armes.Baton;
  */
 public class magicien extends Personnage {
 
-    public static int nbMagiciens = 0;
+    public static int nombrebMagiciens = 0;
 
     public magicien(boolean confirme, String Nom, int NiveauVie) {
 
         super(Nom, NiveauVie);
-        nbMagiciens++;
+        nombrebMagiciens++;
     }
 
     public void setConfirme(boolean confirme) {
     }
 
-    
     Arme arme;
     int nbArme = 0;
 
@@ -39,4 +38,14 @@ public class magicien extends Personnage {
         return nbArme;
     }
 
+    public static int getnombreMagiciens() {
+        return nombrebMagiciens;
+
+    }
+
+    @Override
+    public void detruire() {
+        nombrebMagiciens--;
+
+    }
 }

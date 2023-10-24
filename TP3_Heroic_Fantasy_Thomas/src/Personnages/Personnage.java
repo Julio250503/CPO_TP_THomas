@@ -9,11 +9,11 @@ import java.util.ArrayList;
  */
 /**
  *
- * @author Jules Thomas TD C
+ * @author Jules Thomas TD
  */
 public class Personnage {
 
-    public static int nbPersonnages = 0;
+    public static int nombrePersonnages = 0;
 
     private final String Nom;
     private int NiveauVie;
@@ -31,7 +31,7 @@ public class Personnage {
         }
         this.Nom = Nom;
         this.NiveauVie = NiveauVie;
-        nbPersonnages++;
+        nombrePersonnages++;
     }
 
     public String getNom() {
@@ -67,6 +67,14 @@ public class Personnage {
             arme_en_main = null;
         }
 
+    }
+
+    public static int getnombrePersonnages() {
+        return nombrePersonnages;
+    }
+
+    public void detruire() {
+        nombrePersonnages--;
     }
 
     public Arme getArme_en_main() {
