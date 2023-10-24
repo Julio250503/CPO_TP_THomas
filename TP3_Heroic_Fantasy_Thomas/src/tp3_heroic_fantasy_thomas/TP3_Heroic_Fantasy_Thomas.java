@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Jules
+ * @author Jules Thomas TD C TP 3
  */
 public class TP3_Heroic_Fantasy_Thomas {
 
@@ -36,11 +36,51 @@ public class TP3_Heroic_Fantasy_Thomas {
         for (int i = 0; i < taille; i++) {
             System.out.println("votre amre est : " + Tab.get(i));
         }
-    }
-    magicien Gandalf = new magicien(true, "Gandalf", 65);
-    magicien Garcimore = new magicien(false, "Garcimore", 44);
+        magicien Gandalf = new magicien(true, "Gandalf", 65);
+        magicien Garcimore = new magicien(false, "Garcimore", 44);
 
-    guerrier Conan = new guerrier(false, "Conan", 78);
-    guerrier Lannister = new guerrier(true, "Lannister", 45);
+        guerrier Conan = new guerrier(false, "Conan", 78);
+        guerrier Lannister = new guerrier(true, "Lannister", 45);
+
+        ArrayList<Personnage> Tab2 = new ArrayList<>();
+        Tab2.add(Gandalf);
+        Tab2.add(Garcimore);
+        Tab2.add(Conan);
+        Tab2.add(Lannister);
+
+        int taille2 = Tab2.size();
+
+        for (int j = 0; j < taille2; j++) {
+            System.out.println("Le personnage est : " + Tab2.get(j));
+        }
+        Epee arme1 = new Epee(3, "couteau", 2);
+        Epee arme2 = new Epee(4, "Hache", 4);
+        Epee arme3 = new Epee(6, "double Hache", 7);
+
+        Baton arme4 = new Baton("brindille", 1, 10);
+        Baton arme5 = new Baton("batte de baseball", 3, 1);
+        Baton arme6 = new Baton("kapla", 2, 2);
+        
+        magicien Julio = new magicien (true , "Julio", 65);
+        guerrier Tanguy = new guerrier (false , "Tanguy", 78);
+
+        Tanguy.gestion(arme1);       
+        Tanguy.gestion(arme2);
+        Tanguy.gestion(arme3);
+        
+        Tanguy.equiper(arme2);
+        Tanguy.getArme_en_main();
+        
+        Julio.gestion(arme1);
+        Julio.gestion(arme4);
+        Julio.gestion(arme6);
+        
+        Julio.equiper(arme1);
+        Julio.getArme_en_main();
+        Julio.NbArmePref();
+        
+        System.out.println(Julio.toString());
+        System.out.println(Tanguy.toString());
+    }
 
 }
