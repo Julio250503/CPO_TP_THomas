@@ -16,7 +16,7 @@ public class Personnage {
     public static int nombrePersonnages = 0;
 
     private final String Nom;
-    private int NiveauVie;
+    int NiveauVie;
     ArrayList<Arme> inventaire = new ArrayList<>();
     Arme arme_en_main = null;
 
@@ -80,5 +80,13 @@ public class Personnage {
     public Arme getArme_en_main() {
         return arme_en_main;
     }
-
+    public void seFatiguer() {
+        this.NiveauVie -= 10;  
+    }
+    public boolean estVivant() {
+        return this.NiveauVie > 0;
+    }
+public void estAttaque(int points) {
+        this.NiveauVie -= points;  
+    }
 }

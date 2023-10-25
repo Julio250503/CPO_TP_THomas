@@ -48,4 +48,19 @@ public class magicien extends Personnage {
         nombrebMagiciens--;
 
     }
+
+    public void seFatiguer() {
+        this.NiveauVie -= 10;
+    }
+
+    @Override
+    public boolean estVivant() {
+        return this.NiveauVie > 0;
+    }
+
+    @Override
+    public void estAttaque(int points) {
+
+        this.NiveauVie -= points;
+    }
 }
