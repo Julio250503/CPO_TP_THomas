@@ -14,18 +14,35 @@ public class LightOff_Thomas_version_console {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        CelluleLumineuse cellule1 = new CelluleLumineuse();
+        GrilleDeCellules grille = new GrilleDeCellules(7, 7);
 
-        System.out.println("etat initial de la cellule 1 : " + cellule1);
-        cellule1.activerCellule();
-        System.out.println("Nouvel etat de la cellule 1 apres activation : " + cellule1);
-        cellule1.eteindreCellule();
-        System.out.println("Nouvel etat de la cellule 1 apres extinction : " + cellule1);
-        System.out.println("La cellule 1 est eteinte ? " + cellule1.estEteint());
+        System.out.println(grille);
 
-        CelluleLumineuse cellule2 = new CelluleLumineuse();
-        System.out.println("etat initial de la cellule 2 : " + cellule2);
+        
+        grille.melangerMatriceAleatoirement(40); 
+        System.out.println("Grille apres melange aleatoire :");
+        System.out.println(grille);
+
+        
+        grille.activerLigneDeCellules(2);
+        System.out.println("Grille apres activation de la ligne 2 :");
+        System.out.println(grille);
+
+        
+        grille.activerColonneDeCellules(4);
+        System.out.println("Grille apres activation de la colonne 4 :");
+        System.out.println(grille);
+
+        
+        grille.activerDiagonaleDescendante();
+        grille.activerDiagonaleMontante();
+        System.out.println("Grille apres activation des deux diagonales :");
+        System.out.println(grille);
+
+        
+        grille.activerLigneColonneOuDiagonaleAleatoire();
+        System.out.println("Grille apres activation aleatoire :");
+        System.out.println(grille);
 
     }
-
 }
