@@ -54,7 +54,7 @@ public class GrilleDeCellules {
      */
     public void activerLigneColonneOuDiagonaleAleatoire() {
         Random random = new Random();
-        int choix = random.nextInt(3);
+        int choix = random.nextInt(10);
         switch (choix) {
             case 0 -> {
 
@@ -70,6 +70,19 @@ public class GrilleDeCellules {
                     matriceCellules[i][colonne].activerCellule();
                 }
             }
+            case 2 -> {
+
+                for (int i = 0; i < Math.min(nbLignes, nbColonnes); i++) {
+                    matriceCellules[i][i].activerCellule();
+                }
+            }
+            case 3 -> {
+
+                for (int i = 0; i < Math.min(nbLignes, nbColonnes); i++) {
+                    matriceCellules[i][nbColonnes - i - 1].activerCellule();
+                }
+            }
+
             default -> {
 
                 int direction = random.nextBoolean() ? 1 : -1;
