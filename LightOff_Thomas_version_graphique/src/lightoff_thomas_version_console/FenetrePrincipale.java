@@ -40,13 +40,15 @@ public class FenetrePrincipale extends javax.swing.JFrame {
 
     }
 
-    private void changerEtatCellules(int action) {
+    public void verifierGrilleEteinte() {
         if (grille.cellulesToutesEteintes()) {
             Bravo.setText("La grille est éteinte !");
+              Bravo.setVisible(true);
         } else {
 
-            Bravo.setText("");
+         
         }
+        repaint();
     }
 
     public void initialiserPartie() {
@@ -283,8 +285,8 @@ public class FenetrePrincipale extends javax.swing.JFrame {
         });
         getContentPane().add(btnDiagM, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 470, -1, -1));
 
-        Bravo.setText("Bravo vous avez gagné");
-        getContentPane().add(Bravo, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 40, 37, -1));
+        Bravo.setText("Bravo vous avez gagné!!");
+        getContentPane().add(Bravo, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 40, 140, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -292,42 +294,50 @@ public class FenetrePrincipale extends javax.swing.JFrame {
     private void btnLigne0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLigne0ActionPerformed
         this.grille.activerLigneDeCellules(0);
         repaint();
+        verifierGrilleEteinte();
 
     }//GEN-LAST:event_btnLigne0ActionPerformed
 
     private void btnLigne9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLigne9ActionPerformed
         this.grille.activerLigneDeCellules(9);
         repaint();
+        verifierGrilleEteinte();
     }//GEN-LAST:event_btnLigne9ActionPerformed
 
     private void btnLigne1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLigne1ActionPerformed
         this.grille.activerLigneDeCellules(1);
         repaint();
+        verifierGrilleEteinte();
     }//GEN-LAST:event_btnLigne1ActionPerformed
 
     private void btnLigne2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLigne2ActionPerformed
         this.grille.activerLigneDeCellules(2);
         repaint();
+        verifierGrilleEteinte();
     }//GEN-LAST:event_btnLigne2ActionPerformed
 
     private void btnLigne3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLigne3ActionPerformed
         this.grille.activerLigneDeCellules(3);
         repaint();
+        verifierGrilleEteinte();
     }//GEN-LAST:event_btnLigne3ActionPerformed
 
     private void btnLigne4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLigne4ActionPerformed
         this.grille.activerLigneDeCellules(4);
         repaint();
+        verifierGrilleEteinte();
     }//GEN-LAST:event_btnLigne4ActionPerformed
 
     private void btnLigne5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLigne5ActionPerformed
         this.grille.activerLigneDeCellules(5);
         repaint();
+        verifierGrilleEteinte();
     }//GEN-LAST:event_btnLigne5ActionPerformed
 
     private void btnLigne6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLigne6ActionPerformed
         this.grille.activerLigneDeCellules(6);
-        repaint();
+        repaint();    
+        verifierGrilleEteinte();
     }//GEN-LAST:event_btnLigne6ActionPerformed
 
     private void btnLigne7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLigne7ActionPerformed
@@ -338,67 +348,81 @@ public class FenetrePrincipale extends javax.swing.JFrame {
     private void btnLigne8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLigne8ActionPerformed
         this.grille.activerLigneDeCellules(8);
         repaint();
+        verifierGrilleEteinte();
     }//GEN-LAST:event_btnLigne8ActionPerformed
 
     private void btnColonne0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnColonne0ActionPerformed
         this.grille.activerColonneDeCellules(0);
         repaint();
+        verifierGrilleEteinte();
     }//GEN-LAST:event_btnColonne0ActionPerformed
 
     private void btnColonne1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnColonne1ActionPerformed
         this.grille.activerColonneDeCellules(1);
         repaint();
+        verifierGrilleEteinte();
     }//GEN-LAST:event_btnColonne1ActionPerformed
 
     private void btnColonne2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnColonne2ActionPerformed
         this.grille.activerColonneDeCellules(2);
         repaint();
+        verifierGrilleEteinte();
     }//GEN-LAST:event_btnColonne2ActionPerformed
 
     private void btnColonne3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnColonne3ActionPerformed
         this.grille.activerColonneDeCellules(3);
         repaint();
+        verifierGrilleEteinte();
     }//GEN-LAST:event_btnColonne3ActionPerformed
 
     private void btnColonne4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnColonne4ActionPerformed
         this.grille.activerColonneDeCellules(4);
         repaint();
+        verifierGrilleEteinte();
     }//GEN-LAST:event_btnColonne4ActionPerformed
 
     private void btnColonne5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnColonne5ActionPerformed
         this.grille.activerColonneDeCellules(5);
         repaint();
+        verifierGrilleEteinte();
     }//GEN-LAST:event_btnColonne5ActionPerformed
 
     private void btnColonne6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnColonne6ActionPerformed
         this.grille.activerColonneDeCellules(6);
         repaint();
+        verifierGrilleEteinte();
     }//GEN-LAST:event_btnColonne6ActionPerformed
 
     private void btnColonne7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnColonne7ActionPerformed
         this.grille.activerColonneDeCellules(7);
         repaint();
+        verifierGrilleEteinte();
     }//GEN-LAST:event_btnColonne7ActionPerformed
 
     private void btnColonne8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnColonne8ActionPerformed
         this.grille.activerColonneDeCellules(8);
         repaint();
+        verifierGrilleEteinte();
     }//GEN-LAST:event_btnColonne8ActionPerformed
 
     private void btnColonne9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnColonne9ActionPerformed
         this.grille.activerColonneDeCellules(9);
         repaint();
+        verifierGrilleEteinte();
 
     }//GEN-LAST:event_btnColonne9ActionPerformed
 
     private void btnDiagDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDiagDActionPerformed
         this.grille.activerDiagonaleDescendante();
         repaint();
+        verifierGrilleEteinte();
     }//GEN-LAST:event_btnDiagDActionPerformed
 
     private void btnDiagMActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDiagMActionPerformed
         this.grille.activerDiagonaleMontante();
         repaint();
+        verifierGrilleEteinte();
+        
     }//GEN-LAST:event_btnDiagMActionPerformed
 
     /**

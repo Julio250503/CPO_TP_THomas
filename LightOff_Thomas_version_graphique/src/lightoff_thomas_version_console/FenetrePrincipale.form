@@ -341,11 +341,11 @@
     </Component>
     <Component class="javax.swing.JLabel" name="Bravo">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Bravo vous avez gagn&#xe9;"/>
+        <Property name="text" type="java.lang.String" value="Bravo vous avez gagn&#xe9;!!"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="340" y="40" width="37" height="-1"/>
+          <AbsoluteConstraints x="320" y="40" width="140" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>
