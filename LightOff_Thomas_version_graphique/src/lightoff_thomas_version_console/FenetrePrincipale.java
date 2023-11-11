@@ -20,6 +20,7 @@ public class FenetrePrincipale extends javax.swing.JFrame {
 
     /**
      * Creates new form FenetrePrincipale
+     * @param nb
      */
     public FenetrePrincipale(int nb) {
         initComponents();
@@ -115,9 +116,9 @@ public class FenetrePrincipale extends javax.swing.JFrame {
                 PanneauGrille.add(bouton_cellule); // ajout au Jpanel PanneauGrille
             }
         }
-
     }
-    
+
+
     
 
     private void desactiverBoutons() {
@@ -209,12 +210,11 @@ public class FenetrePrincipale extends javax.swing.JFrame {
 
         Bravo.setBackground(new java.awt.Color(255, 255, 51));
         Bravo.setText("Bravo");
-        getContentPane().add(Bravo, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 470, 560, -1));
+        getContentPane().add(Bravo, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 500, 560, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-   
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Bravo;
